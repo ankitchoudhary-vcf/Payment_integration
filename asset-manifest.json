@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Payment_integration/static/css/main.a617e044.chunk.css",
+    "main.js": "/Payment_integration/static/js/main.60cf2dea.chunk.js",
+    "main.js.map": "/Payment_integration/static/js/main.60cf2dea.chunk.js.map",
+    "runtime-main.js": "/Payment_integration/static/js/runtime-main.9e38795c.js",
+    "runtime-main.js.map": "/Payment_integration/static/js/runtime-main.9e38795c.js.map",
+    "static/css/2.c6f463e4.chunk.css": "/Payment_integration/static/css/2.c6f463e4.chunk.css",
+    "static/js/2.7d2afa7e.chunk.js": "/Payment_integration/static/js/2.7d2afa7e.chunk.js",
+    "static/js/2.7d2afa7e.chunk.js.map": "/Payment_integration/static/js/2.7d2afa7e.chunk.js.map",
+    "static/js/3.bbb979bd.chunk.js": "/Payment_integration/static/js/3.bbb979bd.chunk.js",
+    "static/js/3.bbb979bd.chunk.js.map": "/Payment_integration/static/js/3.bbb979bd.chunk.js.map",
+    "index.html": "/Payment_integration/index.html",
+    "static/css/2.c6f463e4.chunk.css.map": "/Payment_integration/static/css/2.c6f463e4.chunk.css.map",
+    "static/css/main.a617e044.chunk.css.map": "/Payment_integration/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.7d2afa7e.chunk.js.LICENSE.txt": "/Payment_integration/static/js/2.7d2afa7e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e38795c.js",
+    "static/css/2.c6f463e4.chunk.css",
+    "static/js/2.7d2afa7e.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.60cf2dea.chunk.js"
+  ]
+}
