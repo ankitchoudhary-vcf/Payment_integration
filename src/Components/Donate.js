@@ -1,5 +1,4 @@
 import React from "react";
-// import axios from "axios";
 import { useState, useEffect } from 'react';
 
 export const Donate = () => {
@@ -48,27 +47,35 @@ export const Donate = () => {
       order_id: data.order_id,
       name: "PayDoni",
       description: "Donation",
-      image: "https://example.com/your_logo",
+      image: "https://img-premium.flaticon.com/png/512/3588/premium/3588711.png?token=exp=1628494812~hmac=955f7997c304e6e5276095d3b3de780d",
       handler: function (response) {
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature);
+        alert("Payment done Successfully!");
       },
     };
     var paymentObject = new window.Razorpay(options);
     paymentObject.open();
+
+    paymentObject.on('payment.failed', function (response){
+      alert("Oops!!  Transaction Failed!!");
+  })
+
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    if(!name || !email || !amount || name === " " || email === " " || amount === " " || amount === " " || amount < 1 ) {
+    if(!name || !email || !amount || name === " " || email === " " || amount === " " || amount === " " || amount < 1 || !(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) ) {
       alert("Oops!! Invalid Input")
     }
     else {
       displayRazorpay();
+      setName("");
+      setEmail("");
+      setAmount("");
     }
   }
+
+  
 
   return (
     <>
@@ -88,11 +95,11 @@ export const Donate = () => {
         </div>
         <div className="column notification is-link is-light is-6">
           <form>
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
+            <div className="field">
+              <label className="label">Name</label>
+              <div className="control">
                 <input
-                  class="input"
+                  className="input"
                   type="text"
                   placeholder="Enter Your Name"
                   value={name}
@@ -102,11 +109,11 @@ export const Donate = () => {
               </div>
             </div>
 
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control">
+            <div className="field">
+              <label className="label">Email</label>
+              <div className="control">
                 <input
-                  class="input"
+                  className="input"
                   type="email"
                   placeholder="Enter Your Email"
                   value={email}
@@ -116,11 +123,11 @@ export const Donate = () => {
               </div>
             </div>
 
-            <div class="field">
-              <label class="label">Amount</label>
-              <div class="control">
+            <div className="field">
+              <label className="label">Amount</label>
+              <div className="control">
                 <input
-                  class="input"
+                  className="input"
                   type="number"
                   placeholder="Enter the Amount"
                   value={amount}
@@ -130,9 +137,9 @@ export const Donate = () => {
               </div>
             </div>
 
-            <div class="field">
-              <div class="control">
-              <button class="button is-fullwidth is-info" onClick={handleSubmit}>Pay Now</button>
+            <div className="field">
+              <div className="control">
+              <button className="button is-fullwidth is-info" onClick={handleSubmit}>Pay Now</button>
               </div>
             </div>
           </form>
