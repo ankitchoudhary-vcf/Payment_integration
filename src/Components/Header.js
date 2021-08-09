@@ -39,7 +39,7 @@ export const Header = () => {
           </Link>          
         </div>
         <div className="navbar-end my-2 mr-4">
-        <Link className="navbar-item button is-primary is-light" to="/about">
+        <Link to="/donate" className="navbar-item button is-primary is-light">
             Donate Now
           </Link> 
         </div>
