@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Payment_integration/static/css/main.a617e044.chunk.css",
-    "main.js": "/Payment_integration/static/js/main.60cf2dea.chunk.js",
-    "main.js.map": "/Payment_integration/static/js/main.60cf2dea.chunk.js.map",
+    "main.js": "/Payment_integration/static/js/main.caba287e.chunk.js",
+    "main.js.map": "/Payment_integration/static/js/main.caba287e.chunk.js.map",
     "runtime-main.js": "/Payment_integration/static/js/runtime-main.9e38795c.js",
     "runtime-main.js.map": "/Payment_integration/static/js/runtime-main.9e38795c.js.map",
     "static/css/2.c6f463e4.chunk.css": "/Payment_integration/static/css/2.c6f463e4.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.c6f463e4.chunk.css",
     "static/js/2.7d2afa7e.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.60cf2dea.chunk.js"
+    "static/js/main.caba287e.chunk.js"
   ]
 }
