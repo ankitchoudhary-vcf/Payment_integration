@@ -5,6 +5,7 @@ import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
 import { Footer } from "./Components/Footer";
 import { HashRouter, Switch, Route } from "react-router-dom";
+import { About } from "./Components/About";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route exact path="/donate">
             <Donate />
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
         </Switch>
         <Footer />
