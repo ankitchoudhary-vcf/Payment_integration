@@ -41,13 +41,12 @@ export const Donate = () => {
     }
 
     var options = {
-      key: process.env.React_App_API_Key,
+      key: "rzp_test_WKw1wPTThc1bXI",
       amount: data.amount*100,
       currency: data.currency,
       order_id: data.order_id,
       name: "PayDoni",
       description: "Donation",
-      image: "https://img-premium.flaticon.com/png/512/3588/premium/3588711.png?token=exp=1628494812~hmac=955f7997c304e6e5276095d3b3de780d",
       handler: function (response) {
         alert("Payment done Successfully!");
       },
