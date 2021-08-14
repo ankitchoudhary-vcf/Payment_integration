@@ -41,7 +41,7 @@ export const Donate = () => {
     }
 
     var options = {
-      key: "rzp_test_WKw1wPTThc1bXI",
+      key: process.env.React_App_API_Key,
       amount: data.amount*100,
       currency: data.currency,
       order_id: data.order_id,
